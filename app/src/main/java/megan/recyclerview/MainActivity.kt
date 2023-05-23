@@ -16,8 +16,9 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         rvnames = findViewById(R.id.rvnames)
-    }
 
+
+    }
     fun getFibonacciNumbers(limit: Int): List<Int> {
         val fibonacciNumbers = mutableListOf(0, 1)
         for (i in 2 until limit) {

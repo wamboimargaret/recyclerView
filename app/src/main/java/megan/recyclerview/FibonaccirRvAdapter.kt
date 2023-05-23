@@ -19,7 +19,7 @@ class NamesRvAdapter(private val numbs:List<Int>): Adapter<NamesViewHolder>(){
     }
 
     override fun onBindViewHolder(holder: NamesViewHolder, position: Int) {
-        val currentName =namesList.get(position)
+        val currentName =numbs.get(position)
         holder.tvname.text=currentName
     }
 
