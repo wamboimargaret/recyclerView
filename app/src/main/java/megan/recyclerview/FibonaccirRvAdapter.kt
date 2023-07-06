@@ -15,12 +15,13 @@ class NamesRvAdapter(private val numbs:List<Int>): Adapter<NamesViewHolder>(){
     }
 
     override fun getItemCount(): Int {
+      return numbs.size
 
     }
 
     override fun onBindViewHolder(holder: NamesViewHolder, position: Int) {
-        val currentName =numbs.get(position)
-        holder.tvname.text=currentName
+        val currentNumber =numbs[position]
+        holder.tvname.text= currentNumber.toString()
     }
 
 }
